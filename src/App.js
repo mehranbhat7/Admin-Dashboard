@@ -1,8 +1,8 @@
 import { useContext } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { ColorContext } from './ColorContext/darkContext';
-import Home from './Components/Home/Home';
-import Orders from './Components/Orders/Orders';
+import Permission from './Components/Permission/Permission';
+import Roles from './Components/roles/Roles';
 import AddNew from './Pages/AddNew/AddNew';
 import BlogDetail from './Pages/BlogDetail/BlogDetail';
 import Blogs from './Pages/Blogs/Blogs';
@@ -149,7 +149,7 @@ function App() {
             <BrowserRouter>
                 <Routes>
                     <Route path="/">
-                        <Route index element={<Home />} />
+                        {/* <Route index element={<Home />} /> */}
                         <Route path="login" element={<Login />} />
                         {/* nested routes */}
                         <Route path="users">
@@ -167,7 +167,8 @@ function App() {
                             />
                         </Route>
 
-                        <Route path="orders" element={<Orders />} />
+                        <Route path="roles" element={<Roles />} />
+                        <Route path="permission" element={<Permission />} />
 
                         {/* nested routes */}
                         <Route path="products">

@@ -92,11 +92,11 @@ function Blogs({ type }) {
             width: 160,
             renderCell: (params) => (
                 <div className="actionn">
-                    <Link to={params.row.id}>
+                    {/* <Link to={params.row.id}>
                         <button type="button" className="view_btn">
                             View
                         </button>
-                    </Link>
+                    </Link> */}
                     <button
                         type="button"
                         className="delete_btn"

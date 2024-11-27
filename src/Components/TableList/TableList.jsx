@@ -1,6 +1,6 @@
 /* eslint-disable no-underscore-dangle */
 import React from 'react';
-import './tableList.scss';
+import './TableList.scss';
 
 // mui table
 import Paper from '@mui/material/Paper';

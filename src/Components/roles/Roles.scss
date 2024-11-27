@@ -1,0 +1,23 @@
+.roles {
+  display: flex;
+}
+
+.home_sidebar {
+  width: 250px; /* Adjust the width of your sidebar */
+  height: 100vh;
+  position: fixed; /* Keeps the sidebar in place */
+}
+
+.roles_page_main {
+  margin-left: 250px; /* Adjust this value based on the sidebar width */
+  width: calc(
+    100% - 250px
+  ); /* Ensures main content takes the remaining width */
+  padding: 20px;
+}
+
+.roles_content {
+  padding: 20px;
+  background-color: #f4f4f4;
+  /* Add any other styling for your content here */
+}

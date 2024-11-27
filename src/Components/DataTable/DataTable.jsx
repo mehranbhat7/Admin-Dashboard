@@ -1,7 +1,8 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
+import Switch from '@mui/material/Switch';
 import { DataGrid } from '@mui/x-data-grid';
+
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import man1 from '../../Images/man1.jpg';
 import man2 from '../../Images/man2.jpg';
 import man3 from '../../Images/man3.jpg';
@@ -17,7 +18,7 @@ const userData = [
         username: 'Devid434',
         email: 'devidbom232@gmail.com',
         image: man1,
-        status: 'active',
+        status: <Switch inputProps={{ 'aria-label': 'Switch demo' }} defaultChecked />,
         age: '24',
     },
     {
@@ -25,7 +26,7 @@ const userData = [
         username: 'Johnn434',
         email: 'john03434@gmail.com',
         image: man2,
-        status: 'passive',
+        status: <Switch inputProps={{ 'aria-label': 'Switch demo' }} defaultChecked />,
         age: '29',
     },
     {
@@ -33,7 +34,7 @@ const userData = [
         username: 'Dilvib1233',
         email: 'dilvibhasanjohn1233@gmail.com',
         image: man3,
-        status: 'active',
+        status: <Switch inputProps={{ 'aria-label': 'Switch demo' }} defaultChecked />,
         age: '20',
     },
     {
@@ -41,7 +42,7 @@ const userData = [
         username: 'DoeJelia88',
         email: 'doejelia88@gmail.com',
         image: woman1,
-        status: 'active',
+        status: <Switch inputProps={{ 'aria-label': 'Switch demo' }} defaultChecked />,
         age: '23',
     },
     {
@@ -49,7 +50,7 @@ const userData = [
         username: 'Lucas0984',
         email: 'lucashossel@gmail.com',
         image: man4,
-        status: 'passive',
+        status: <Switch inputProps={{ 'aria-label': 'Switch demo' }} defaultChecked />,
         age: '30',
     },
     {
@@ -57,7 +58,7 @@ const userData = [
         username: 'Annie765',
         email: 'anniejhon@gmail.com',
         image: woman2,
-        status: 'active',
+        status: <Switch inputProps={{ 'aria-label': 'Switch demo' }} defaultChecked />,
         age: '23',
     },
     {
@@ -65,7 +66,7 @@ const userData = [
         username: 'Johnn434',
         email: 'john03434@gmail.com',
         image: man2,
-        status: 'passive',
+        status: <Switch inputProps={{ 'aria-label': 'Switch demo' }} defaultChecked />,
         age: '29',
     },
     {
@@ -73,7 +74,7 @@ const userData = [
         username: 'Dilvib1233',
         email: 'dilvibhasanjohn1233@gmail.com',
         image: man3,
-        status: 'active',
+        status: <Switch inputProps={{ 'aria-label': 'Switch demo' }} defaultChecked />,
         age: '20',
     },
     {
@@ -81,7 +82,7 @@ const userData = [
         username: 'Lucas0984',
         email: 'lucashossel@gmail.com',
         image: man4,
-        status: 'passive',
+        status: <Switch inputProps={{ 'aria-label': 'Switch demo' }} defaultChecked />,
         age: '30',
     },
     {
@@ -89,7 +90,7 @@ const userData = [
         username: 'DoeJelia88',
         email: 'doejelia88@gmail.com',
         image: woman1,
-        status: 'active',
+        status: <Switch inputProps={{ 'aria-label': 'Switch demo' }} defaultChecked />,
         age: '23',
     },
     {
@@ -97,7 +98,7 @@ const userData = [
         username: 'Lucas0984',
         email: 'lucashossel@gmail.com',
         image: man4,
-        status: 'passive',
+        status: <Switch inputProps={{ 'aria-label': 'Switch demo' }} defaultChecked />,
         age: '30',
     },
     {
@@ -105,7 +106,7 @@ const userData = [
         username: 'Johnn434',
         email: 'john03434@gmail.com',
         image: man2,
-        status: 'passive',
+        status: <Switch inputProps={{ 'aria-label': 'Switch demo' }} defaultChecked />,
         age: '29',
     },
 ];
@@ -150,17 +151,20 @@ function DataTable() {
             width: 170,
             renderCell: (params) => (
                 <div className="actionn">
-                    <Link to={params.row.id}>
+                    {/* <Link to={params.row.id}>
                         <button type="button" className="view_btn">
                             View
                         </button>
-                    </Link>
+                    </Link> */}
                     <button
                         type="button"
                         className="delete_btn"
                         onClick={() => handleDlt(params.row.id)}
                     >
                         Delete
+                    </button>
+                    <button type="button" className="view_btn">
+                        edit
                     </button>
                 </div>
             ),

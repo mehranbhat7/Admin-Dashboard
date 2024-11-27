@@ -30,11 +30,11 @@ function ItemLists({ type }) {
                 linkto: '/users',
             };
             break;
-        case 'orders':
+        case 'roles':
             data = {
-                title: 'ORDERS',
+                title: 'ROLES',
                 isMoney: false,
-                count: 34,
+                count: 347,
 
                 icon: (
                     <LocalGroceryStoreOutlinedIcon
@@ -46,7 +46,7 @@ function ItemLists({ type }) {
                     />
                 ),
                 link: 'View all orders',
-                linkto: '/orders',
+                linkto: '/roles',
             };
             break;
         case 'products':

@@ -1,5 +1,5 @@
 import React from 'react';
-import Chart from '../../Components/Chart/Chart';
+// import Chart from '../../Components/Chart/Chart';
 import Navbar from '../../Components/Navbar/Navbar';
 import Sidebar from '../../Components/Sidebar/Sidebar';
 import TableList from '../../Components/TableList/TableList';
@@ -29,9 +29,9 @@ function Detail() {
                         </div>
                     </div>
 
-                    <div className="user_chart">
+                    {/* <div className="user_chart">
                         <Chart height={390} title="User spending" />
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className="table">

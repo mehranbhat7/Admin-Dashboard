@@ -1,6 +1,5 @@
 import React from 'react';
 import Chart from '../Chart/Chart';
-import ItemLists from '../ItemLists/ItemLists';
 import Navbar from '../Navbar/Navbar';
 import ProgressBar from '../ProgressBar/ProgressBar';
 import Sidebar from '../Sidebar/Sidebar';
@@ -20,12 +19,12 @@ function Home() {
 
                 <div className="bg_color" />
 
-                <div className="home_items">
+                {/* <div className="home_items">
                     <ItemLists type="user" />
                     <ItemLists type="orders" />
                     <ItemLists type="products" />
                     <ItemLists type="balance" />
-                </div>
+                </div> */}
 
                 <div className="chart_sec">
                     <ProgressBar />
